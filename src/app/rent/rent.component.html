@@ -1,0 +1,25 @@
+
+<mat-card>
+  <mat-card-content [style.padding]="'0'">
+<div>
+   <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+      <input type = "text" class = "fortextbox" name = "emailid" placeholder = "emailid"
+         formControlName="emailid">
+      <br/>
+     <br/>
+     <mat-label type = "text" class = "price" > $ price value</mat-label>
+      <br/>
+     <br/>
+
+
+
+      <input type = "submit" class = "action-button" value = "Rent">
+   </form>
+</div>
+<p>
+   This movie was rented by : {{emailid}}
+</p>
+  </mat-card-content>
+</mat-card>
+
+

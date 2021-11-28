@@ -1,0 +1,39 @@
+$font-stack: Helvetica, sans-serif
+$secondary-color: #0f0822
+$primary-color: #5028a8
+
+.search-box
+  width: 100%
+
+.movie-poster
+  width: 185px
+  height: 280px
+
+.description
+  padding-right: 8px
+  margin-top: 25px
+  text-overflow: ellipsis
+  word-wrap: break-word
+  white-space: normal
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 6
+  -webkit-box-orient: vertical
+  font: 100% $font-stack
+  color: $secondary-color
+
+.movie-title
+  font-weight: 600
+  font-size: 0.7em
+  font: 100% $font-stack
+  color: $primary-color
+
+.more-info
+  border-top: 1px solid rgba(48, 35, 70, 0.88)
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  padding: 16px
+  font: 100% $font-stack
+  color: $primary-color

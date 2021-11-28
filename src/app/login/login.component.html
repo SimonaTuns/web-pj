@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-content [style.padding]="'0'">
+    <div >
+<div>
+   <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+      <input type = "text" class = "fortextbox" name = "emailid" placeholder = "emailid"
+         formControlName="emailid">
+      <br/>
+
+      <input type = "password" class = "fortextbox" name="passwd"
+         placeholder = "passwd" formControlName = "passwd">
+      <br/>
+
+      <input type = "submit" class = "action-button" value = "Log In">
+   </form>
+</div>
+<p>
+   Email entered is : {{emailid}}
+</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
